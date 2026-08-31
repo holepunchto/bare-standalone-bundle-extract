@@ -1,0 +1,39 @@
+{
+  "name": "bare-standalone-bundle-extract",
+  "version": "0.0.0",
+  "description": "Extract the Bare bundle embedded in a Bare standalone binary",
+  "exports": {
+    ".": "./index.js",
+    "./package": "./package.json"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "format": "prettier --write . && lunte --fix",
+    "fixtures": "bare test/fixtures/generate.js",
+    "lint": "prettier --check . && lunte",
+    "test": "brittle-bare test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holepunchto/bare-standalone-bundle-extract.git"
+  },
+  "author": "Holepunch Inc",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/holepunchto/bare-standalone-bundle-extract/issues"
+  },
+  "homepage": "https://github.com/holepunchto/bare-standalone-bundle-extract#readme",
+  "devDependencies": {
+    "bare-build": "^1.0.2",
+    "bare-bundle": "^1.10.0",
+    "brittle": "^3.19.0",
+    "lunte": "^1.6.0",
+    "prettier": "^3.4.1",
+    "prettier-config-holepunch": "^2.0.0"
+  },
+  "dependencies": {
+    "bare-lief": "^0.2.7"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "bare-standalone-bundle-extract",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Extract the Bare bundle embedded in a Bare standalone binary",
   "exports": {
     ".": "./index.js",
